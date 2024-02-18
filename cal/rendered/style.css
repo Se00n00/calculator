@@ -122,31 +122,52 @@ button{
 #close{
     background-color: rgba(255, 0, 0, 0.242);
 } */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 body{
-    margin: 0 auto;
-    background: transparent;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    background: rgba(255, 192, 203, 0.659);
+    justify-content: center;
+    align-items: center;
 }
 .whole{
     /* background-color: rgba(40, 40, 40, 0.112); */
     /* background-image: linear-gradient(to bottom, #5a6fe62b, #4b62a692,#274073a8); */
-    background-image: linear-gradient(rgba(78, 78, 248, 0.218),rgba(0, 0, 246, 0.48));
-    height: 445px;
+    background-image: linear-gradient(to bottom right,#9279BB, #9578BB);
+    height: 410px;
     width: 600px;
-    /* border-radius: 8px; */
+    border-radius: 30px;
     padding: 40px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    box-shadow: inset -3px -3px 3px #695687, inset 3px 3px 3px #dadada4a,5px 5px 15px rgba(0, 0, 0, 0.605);
+
+    /* background-color: hsl(265.97deg 33% 60.2%); */
 }
 .screen{
-    /* background-color: black; */
+    background-color: hsl(268.62deg 40.37% 68.43%);
+    border-radius: 25px;
     height: 150px;
+    margin-bottom: 40px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items: end;
     font-family: "Roboto Mono", monospace;
+    box-shadow: inset 2px 1px 8px hsl(268.62deg 40.37% 38.43%),inset -3px -3px 2px rgba(255, 255, 255, 0.286);
+    
 }
 .results{
-    
     color: rgba(255, 255, 255, 0.895);
     opacity: 0.3;
     font-weight: 800;
@@ -156,6 +177,7 @@ body{
 }
 .query{
     font-size: 30px;
+    padding-bottom: 20px;
     color: rgba(255, 255, 255, 0.346);
     opacity: 0.7;
 }
@@ -184,7 +206,11 @@ body{
 }
 .right button{
     color: white;
-    background-color: #3452ae;
+    background-color: hsl(42.03deg 96.89% 62.16%);
+    box-shadow: inset -3px -3px 2px hsla(34, 97%, 38%, 0.951),inset 2px 2px 2px rgba(255, 255, 255, 0.186);
+}
+.left button{
+    box-shadow: inset -3px -3px 2px hsla(264, 33%, 60%, 0.531),inset 2px 2px 2px rgba(255, 255, 255, 0.186);
 }
 #AC{
     grid-column: 2/3;
@@ -192,14 +218,16 @@ body{
     height: 105px;
 }
 button{
+    font-family: "Noto Sans JP", sans-serif;
     width: 90px;
     height: 50px;
-    border-radius: 12px;
-    color: rgba(48, 48, 48, 0.706);
+    border-radius: 15px;
+    color: hsl(271.53deg 26.94% 57.06%);
     font-size: 22px;
     /* margin-bottom: 5px; */
-    margin: 0px 3px 5px 3px;
+    margin: 0px 10px 10px 3px;
     border: none;
+    font-weight: 700;
     /* border: 1px solid rgba(53, 53, 53, 0.122); */
     /* background-color: #4B61A6; */
     /* backdrop-filter: blur(8px); */

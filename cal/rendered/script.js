@@ -23,21 +23,29 @@ const AC=document.querySelector('#AC');
 const Divide=document.querySelector('#Divide');
 const Multiply=document.querySelector('#Multiply');
 const Seven=document.querySelector('#Seven');
+
 const Eight=document.querySelector('#Eight');
+
 const Nine=document.querySelector('#Nine');
+
 const Four=document.querySelector('#Four');
+
 const Five=document.querySelector('#Five');
+
 const Six=document.querySelector('#Six');
+
 const One=document.querySelector('#One');
+
 const Two=document.querySelector('#Two');
+
 const Three=document.querySelector('#Three');
+
 const o=document.querySelector('#o');
 const Decimal=document.querySelector('#Decimal');
 const Del=document.querySelector('#Del');
 const Sub=document.querySelector('#Sub');
 const Add=document.querySelector('#Add');
 const Enter=document.querySelector('#Enter');
-const close=document.querySelector('#close');
 
 //adding evenlistner for respective
 AC.addEventListener('click',()=>{
@@ -110,3 +118,4 @@ enter.addEventListener('click',()=>{
     query.innerText="";
     
 })
+
