@@ -37,80 +37,76 @@ const Del=document.querySelector('#Del');
 const Sub=document.querySelector('#Sub');
 const Add=document.querySelector('#Add');
 const Enter=document.querySelector('#Enter');
+const close=document.querySelector('#close');
 
 //adding evenlistner for respective
 AC.addEventListener('click',()=>{
     query.innerText="";
-    calculate_partially();
 })
 Divide.addEventListener('click',()=>{
     query.innerText+="/";
-    calculate_partially();
 })
 Multiply.addEventListener('click',()=>{
     query.innerText+="*";
-    calculate_partially();
 })
 Seven.addEventListener('click',()=>{
     query.innerText+="7";
-    calculate_partially();
+    results.innerText=eval(query.innerText);
 })
 Eight.addEventListener('click',()=>{
     query.innerText+="8";
-    calculate_partially();
+    results.innerText=eval(query.innerText);
 })
 Nine.addEventListener('click',()=>{
     query.innerText+="9";
-    calculate_partially();
+    results.innerText=eval(query.innerText);
 })
 Four.addEventListener('click',()=>{
     query.innerText+="4";
-    calculate_partially();
+    results.innerText=eval(query.innerText);
 })
 Five.addEventListener('click',()=>{
     query.innerText+="5";
-    calculate_partially();
+    results.innerText=eval(query.innerText);
 })
 Six.addEventListener('click',()=>{
     query.innerText+="6";
-    calculate_partially();
+    results.innerText=eval(query.innerText);
 })
 One.addEventListener('click',()=>{
     query.innerText+="1";
-    calculate_partially();
+    results.innerText=eval(query.innerText);
 })
 Two.addEventListener('click',()=>{
     query.innerText+="2";
-    calculate_partially();
+    results.innerText=eval(query.innerText);
 })
 Three.addEventListener('click',()=>{
     query.innerText+="3";
-    calculate_partially();
+    results.innerText=eval(query.innerText);
 })
 o.addEventListener('click',()=>{
     query.innerText+="0";
-    calculate_partially();
+    results.innerText=eval(query.innerText);
 })
 Decimal.addEventListener('click',()=>{
     query.innerText+=".";
-    calculate_partially();
 })
 Del.addEventListener('click',()=>{
     let len=query.innerText.length;
     if(len>0){
         query.innerText=query.innerText.slice(0,-1);
     }
-    calculate_partially();
+    results.innerText=eval(query.innerText);
 })
 Sub.addEventListener('click',()=>{
     query.innerText+="-";
-    calculate_partially();
 })
 Add.addEventListener('click',()=>{
     query.innerText+="+";
-    calculate_partially();
 })
 enter.addEventListener('click',()=>{
-    calculate_completely();
+    results.innerText=eval(query.innerText);
+    query.innerText="";
+    
 })
-

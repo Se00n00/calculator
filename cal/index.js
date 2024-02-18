@@ -3,11 +3,11 @@ const path=require('path');
 
 const MainWindow=()=>{
     const win = new BrowserWindow({
-        height:700,
-        width:400,
+        height:504,
+        width:616,
         resizable:true,
-        transparent:true,
-        frame:false,
+        // transparent:true,
+        // frame:false,
         webPreferences:{
             preload: path.join(__dirname,'preload.js')
         }
@@ -22,3 +22,10 @@ app.whenReady().then(MainWindow);
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
   })
+
+
+  module.exports={
+    exito:function(){
+        app.quit();
+    }
+  }
